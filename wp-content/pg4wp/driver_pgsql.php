@@ -87,7 +87,7 @@
 	{
 		$pg_connstr = $GLOBALS['pg4wp_connstr'].' dbname='.$dbname;
 
-		$GLOBALS['pg4wp_conn'] = pg_connect($pg_connstr);
+		$GLOBALS['pg4wp_conn'] = pg_pconnect($pg_connstr);
 		
 		if( $GLOBALS['pg4wp_conn'])
 		{
